@@ -1,0 +1,819 @@
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* =====================================================
+   HOME PAGE
+===================================================== */
+
+.home-header {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.features-header {
+    color: #0eabd6;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    width: 220px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #6c757d;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.feature-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #6c757d;
+}
+
+.feature-box h5 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.feature-box p {
+    font-size: 16px;
+}
+
+/* =====================================================
+   HOW TO USE
+===================================================== */
+
+.how-to-use-header {
+    color: #5eff00;
+    font-size: 28px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.how-to-use-steps {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.how-to-use-steps p {
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   TEAM MEMBERS
+===================================================== */
+
+.member-box {
+    width: 200px;
+    margin: 0 10px 40px;
+    text-align: center;
+}
+
+.member-box p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.member-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgb(54, 5, 118);
+    transition: transform 0.3s ease;
+}
+
+.member-box img:hover {
+    transform: scale(1.1);
+}
+
+/* =====================================================
+   WHY INVESTIQ
+===================================================== */
+
+.why-investiq-container {
+    width: 100%;
+    padding: 60px 20px;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+
+.why-investiq-header {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.why-investiq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.why-investiq-list li {
+    margin-bottom: 18px;
+    padding: 18px 20px;
+    background-color: #444;
+    border: 2px solid #fff;
+    border-radius: 6px;
+}
+
+/* =====================================================
+   TOP 50 STOCKS
+===================================================== */
+
+.stock-list-items {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* =====================================================
+   AI PREDICTOR – FINAL VERSION
+===================================================== */
+
+.ai-predictor {
+    background: #000;
+    min-height: 100vh;
+    padding: 30px 20px;
+    color: #fff;
+}
+
+/* LEFT PANEL WIDTH */
+.ai-predictor .col-3 {
+    max-width: 320px;
+}
+
+/* INPUT + SUBMIT ROW */
+.ai-predictor .mb-2 {
+    display: flex;
+    gap: 10px;
+}
+
+/* INPUTS & BUTTONS */
+.ai-predictor input,
+.ai-predictor button {
+    width: 100%;
+    height: 44px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #555;
+    background: #111;
+    color: #fff;
+    outline: none;
+}
+
+.ai-predictor input::placeholder {
+    color: #aaa;
+}
+
+/* SUBMIT */
+.ai-predictor #submit {
+    background: #e6e6e6;
+    color: #000;
+    font-weight: 600;
+}
+
+/* DATE PICKER (Dash auto classes) */
+.ai-predictor .DateRangePicker {
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+.ai-predictor .DateRangePickerInput {
+    width: 100%;
+    background: #111;
+    border: 1px solid #555;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ai-predictor .DateInput {
+    width: 50%;
+}
+
+.ai-predictor .DateInput_input {
+    background: #111;
+    color: #fff;
+    border: none;
+    height: 42px;
+    text-align: center;
+}
+
+/* STOCK & INDICATORS */
+.ai-predictor #stock,
+.ai-predictor #indicators {
+    width: 48%;
+    display: inline-block;
+    background: #e6e6e6;
+    color: #000;
+    font-weight: 600;
+}
+
+.ai-predictor #stock {
+    margin-right: 4%;
+}
+
+/* FORECAST */
+.ai-predictor #n_days {
+    margin-top: 6px;
+}
+
+.ai-predictor #forecast {
+    margin-top: 6px;
+    background: #c3ff00;
+    color: #000;
+    font-weight: bold;
+}
+
+/* =====================================================
+   BUTTON EFFECTS
+===================================================== */
+
+.ai-predictor button {
+    transition:
+        box-shadow 0.25s ease,
+        transform 0.15s ease,
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+
+.ai-predictor button:hover {
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.35);
+    transform: translateY(-1px);
+}
+
+.ai-predictor button:active {
+    transform: scale(0.96);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+.ai-predictor #forecast:hover {
+    box-shadow:
+        0 0 10px rgba(195, 255, 0, 0.6),
+        0 0 25px rgba(195, 255, 0, 0.35);
+}
+
+.ai-predictor #forecast:active {
+    transform: scale(0.97);
+    box-shadow: 0 0 6px rgba(195, 255, 0, 0.4);
+}
+
+/* RIGHT PANEL TEXT */
+.ai-predictor h3 {
+    color: #c3ff00;
+}
+
+.ai-predictor p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+    ABOUT US CONTAINER
+    ========================= */
+.about-container {
+    max-width: 800px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    padding: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================
+    HEADINGS
+    ========================= */
+.about-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #c3ff00;
+    text-align: center;
+}
+
+
+
+/* =====================================
+    ABOUT US – OUR TEAM SPACING FIX
+    ===================================== */
+
+
+
+.about-container h5 {
+    font-size: medium;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+
+/* =====================================
+    ABOUT US – PARAGRAPH TO OUR TEAM GAP
+    ===================================== */
+
+/* About Us paragraph ke niche halka gap */
+.about-container p {
+    margin-bottom: 30px;
+}
+
+.about-container h2 {
+    color: #c3ff00;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+
+
+/* =====================================================
+   GRAPHS OUTPUT SPACING
+===================================================== */
+
+#graphs-content,
+#main-content,
+#forecast-content {
+    margin-top: 20px !important;
+    padding-bottom: 10px;
+}
+
+#stock,
+#indicators {
+    margin-bottom: 12px !important;
+}
+
+#ticker,
+#description {
+    margin-bottom: 15px !important;
+}
+
+
+/* =====================================================
+   GLOBAL SMOOTH SCROLL
+===================================================== */
+
+html {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* =====================================================
+   INTERACTIVE ELEMENTS
+===================================================== */
+
+a,
+button,
+input,
+.feature-box,
+.member-box {
+    transition:
+        transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.3s ease,
+        color 0.3s ease,
+        background-color 0.3s ease !important;
+}
+
+/* Cards hover */
+.feature-box:hover,
+.member-box:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* =====================================================
+   NAVBAR (LIGHT / DARK)
+===================================================== */
+
+.light .navbar,
+.dark .navbar {
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.light .navbar {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark .navbar {
+    background-color: rgba(26, 26, 26, 0.8) !important;
+}
+
+/* Navbar underline hover */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.ai-predictor button,
+#submit {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.ai-predictor button:hover {
+    transform: translateY(-3px) scale(1.05) !important;
+    box-shadow: 0 10px 20px rgba(195, 255, 0, 0.2) !important;
+    letter-spacing: 1px;
+}
+
+/* =====================================================
+   SCROLLBAR (SINGLE VERSION)
+===================================================== */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+
+/* =====================================================
+   GLOBAL OPTIMIZATION
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    backface-visibility: hidden;
+}
+
+
+
+/* =====================================================
+   GRAPH INTERACTION (PLOTLY)
+===================================================== */
+
+.js-plotly-plot {
+    margin-bottom: 20px;
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.js-plotly-plot:hover {
+    transform: scale(1.01);
+}
+
+/* =====================================================
+   AI PREDICTOR – PANEL & BUTTONS
+===================================================== */
+
+.ai-predictor .col-3 {
+    animation: slideInUp 0.6s ease-out 0.1s backwards;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.ai-predictor button,
+#submit {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition:
+        transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.4s ease,
+        background-color 0.3s ease,
+        color 0.3s ease !important;
+}
+
+.ai-predictor button:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(195, 255, 0, 0.25);
+    background-color: var(--accent);
+    color: #000;
+}
+
+
+/* =====================================================
+   DATE PICKER FIXES (DASH)
+===================================================== */
+
+.DateRangePicker {
+    display: block !important;
+    margin-bottom: 20px !important;
+    position: relative;
+    z-index: 1000 !important;
+}
+
+.DateRangePicker_picker {
+    z-index: 1001 !important;
+    top: 45px !important;
+    background: var(--bg) !important;
+    border: 1px solid var(--accent) !important;
+    animation: fadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.DateRangePickerInput {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.DateInput {
+    width: 45% !important;
+}
+
+.DateInput_input {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 10px !important;
+    color: var(--text) !important;
+}
+
+.DateRangePickerInput_arrow {
+    padding: 0 5px;
+    color: var(--text);
+}
+
+/* Forecast input z-index fix */
+#n_days {
+    position: relative;
+    z-index: 5;
+}
+
+/* =====================================================
+   GLOBAL CARDS (FEATURES / TEAM / LISTS)
+===================================================== */
+
+.feature-box,
+.member-box,
+.stock-list-items li,
+.why-investiq-list li {
+    background: var(--card) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 15px !important;
+    cursor: pointer;
+    transition:
+        transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.3s ease !important;
+}
+
+.feature-box:hover,
+.member-box:hover,
+.stock-list-items li:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent) !important;
+}
+
+/* =====================================================
+   AI PREDICTOR – PERFORMANCE
+===================================================== */
+
+.ai-predictor .col-3 {
+    will-change: transform;
+}
+
+/* =====================================================
+   TOP 50 STOCKS – CLEAN LOOK
+===================================================== */
+
+.stock-list-items li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.stock-list-items li b {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+.stock-list-items li span {
+    color: var(--text);
+    opacity: 0.85;
+}
+
+/* =====================================================
+   PLOTLY MODEBAR – COMPACT
+===================================================== */
+
+.js-plotly-plot .plotly .modebar {
+    top: 5px !important;
+    right: 5px !important;
+    padding: 0 !important;
+}
+
+.modebar-btn {
+    padding: 2px !important;
+    margin: 0 1px !important;
+    font-size: 12px !important;
+    transform: scale(0.8);
+    border-radius: 4px;
+}
+
+.modebar-group {
+    padding: 0 !important;
+    margin-right: 0 !important;
+    display: flex !important;
+    background-color: transparent !important;
+}
+
+/* =====================================================
+   GRAPH CONTAINER
+===================================================== */
+
+.plot-container {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* =====================================================
+   FORECAST CONTENT
+===================================================== */
+
+#forecast-content {
+    margin-top: 25px !important;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--bg);
+}
+
+/* =====================================================
+   TICKER TEXT FIX
+===================================================== */
+
+#ticker {
+    display: inline-block;
+    white-space: normal;
+    overflow: visible;
+    animation: none;
+}
+
+._dash-loading-callback {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* ===============================
+   PAGE TRANSITION – ULTRA SMOOTH
+================================ */
+
+#page-content {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: smoothPageEnter 0.45s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    will-change: opacity, transform;
+}
+
+@keyframes smoothPageEnter {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ===============================
+   SMOOTH SCROLL – PREMIUM FEEL
+================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* ===============================
+   NAVBAR SMOOTH SCROLL EFFECT
+================================ */
+
+.navbar {
+    transition:
+        background-color 0.3s ease,
+        box-shadow 0.3s ease,
+        backdrop-filter 0.3s ease;
+}
+
+
+
+
+/* ===============================
+   GLOBAL INTERACTION SMOOTHNESS
+================================ */
+
+a, button, input, .feature-box, .member-box {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background-color 0.25s ease,
+        color 0.25s ease;
+}
+
+
+/* ===============================
+   PREMIUM SCROLLBAR
+================================ */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        180deg,
+        var(--accent),
+        var(--border)
+    );
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+
+/* DASH PAGE TRANSITION (WORKING) */
+.page-enter {
+    opacity: 0;
+    transform: translateY(14px);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 420ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html, body {
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+}
