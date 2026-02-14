@@ -35,19 +35,19 @@ The model predicts future closing prices for selected stocks.
 ## 🖼️ Application Screenshots
 
 ### 🏠 Home Page
-![Home Screenshot](snapshots/1.jpg)
+![Home Screenshot](snapshots/1.png)
 
 ### 🤖 AI Predictor
-![AI Predictor Screenshot](snapshots/2.jpg)
+![AI Predictor Screenshot](snapshots/2.png)
 
 ### 🤖 Top 50 Stocks
-![Top 50 Stocks Screenshot](snapshots/3.jpg)
+![Top 50 Stocks Screenshot](snapshots/3.png)
 
 ### 🤖Why InvestIQ?
-![Why InvestIQ? Screenshot](snapshots/4.jpg)
+![Why InvestIQ? Screenshot](snapshots/4.png)
 
 ### 🤖About Us
-![About UsScreenshot](snapshots/5.jpg)
+![About UsScreenshot](snapshots/5.png)
 
 ---
 
