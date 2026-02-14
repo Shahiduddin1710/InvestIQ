@@ -1,20 +1,31 @@
-# 📈 InvestIQ – AI Powered Stock Market Analytics Platform
+# 📈 InvestIQ  
+### 🚀 AI-Powered Stock Market Analytics & Forecasting Platform
 
-InvestIQ is a modern financial analytics web application built using **Dash, Plotly, Machine Learning, and Python**.  
-It allows users to analyze stock market trends, visualize historical data, and forecast future stock prices using AI models.
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Dash](https://img.shields.io/badge/Dash-Framework-black)
+![Machine Learning](https://img.shields.io/badge/ML-SVR-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-Educational-orange)
 
 ---
 
-## 🚀 Features
+InvestIQ is a modern financial analytics web application built using **Dash, Plotly, and Machine Learning**.  
+It enables users to analyze stock trends, visualize historical data, and forecast future stock prices using AI models.
 
-- 📊 Real-time Stock Data (via Yahoo Finance API)
+Designed with a clean UI, dark/light theme toggle, and real-time stock integration.
+
+---
+
+## ✨ Key Features
+
+- 📊 Real-time Stock Data (Yahoo Finance API)
 - 📈 Candlestick Chart Visualization
 - 📉 Technical Indicators (EMA 20)
-- 🤖 AI-Based Stock Price Forecasting (SVR Model)
+- 🤖 AI-Based Multi-step Stock Forecasting
 - 🌓 Dark / Light Theme Toggle
 - 📅 Interactive Date Range Selection
-- 📩 Contact Form with Email Integration
 - 📃 Top 50 US Stocks Listing
+- 📩 Contact Form with Email Integration
 - 🎨 Fully Themed Modern UI
 
 ---
@@ -24,43 +35,59 @@ It allows users to analyze stock market trends, visualize historical data, and f
 InvestIQ uses:
 
 - Support Vector Regression (SVR)
-- Lag Features (Previous Close Prices)
-- Rolling Mean Feature Engineering
+- Lag Feature Engineering (Previous Close Prices)
+- Rolling Mean Feature
 - Recursive Multi-step Forecasting
+- StandardScaler Normalization
 
-The model predicts future closing prices for selected stocks.
+The model predicts future closing prices for selected stocks based on historical patterns.
+
+> ⚠️ Built for educational and analytical purposes only.
 
 ---
 
 ## 🖼️ Application Screenshots
 
 ### 🏠 Home Page
-![Home Screenshot](snapshots/1.png)
+<p align="center">
+  <img src="snapshots/1.png" width="900">
+</p>
 
 ### 🤖 AI Predictor
-![AI Predictor Screenshot](snapshots/2.png)
+<p align="center">
+  <img src="snapshots/2.png" width="900">
+</p>
 
 ### 📊 Top 50 Stocks
-![Top 50 Stocks Screenshot](snapshots/3.png)
+<p align="center">
+  <img src="snapshots/3.png" width="900">
+</p>
 
 ### 💡 Why InvestIQ?
-![Why InvestIQ Screenshot](snapshots/4.png)
+<p align="center">
+  <img src="snapshots/4.png" width="900">
+</p>
 
 ### 👤 About Us
-![About Us Screenshot](snapshots/5.png)
+<p align="center">
+  <img src="snapshots/5.png" width="900">
+</p>
+
+> Place your images inside: `snapshots/` folder in the root directory.
+
 ---
 
 ## 🛠️ Tech Stack
 
-- Python
-- Dash
-- Plotly
-- Dash Bootstrap Components
-- Pandas
-- NumPy
-- Scikit-learn
-- Yahoo Finance API
-- SMTP (Email Integration)
+- 🐍 Python  
+- 📊 Dash  
+- 📈 Plotly  
+- 🎨 Dash Bootstrap Components  
+- 🧮 Pandas  
+- 🔢 NumPy  
+- 🤖 Scikit-learn  
+- 📡 Yahoo Finance API  
+- 📧 SMTP Email Integration  
 
 ---
 
@@ -73,17 +100,23 @@ git clone https://github.com/Shahiduddin1710/InvestIQ.git
 cd InvestIQ
 ```
 
+---
+
 ### 2️⃣ Install Dependencies
+
+If `requirements.txt` exists:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-If `requirements.txt` is not available:
+Or install manually:
 
 ```bash
 pip install dash dash-bootstrap-components plotly yfinance pandas numpy scikit-learn
 ```
+
+---
 
 ### 3️⃣ Run the Application
 
@@ -105,23 +138,26 @@ http://127.0.0.1:8050/
 InvestIQ/
 │
 ├── assets/
-│   ├── screenshots/
 │   ├── images...
+│
+├── snapshots/
+│   ├── 1.png
+│   ├── 2.png
+│   ├── 3.png
+│   ├── 4.png
+│   └── 5.png
 │
 ├── app.py
 ├── model.py
-├── README.md
-└── requirements.txt
+├── requirements.txt
+└── README.md
 ```
-
----
-
 
 ---
 
 ## ⚠️ Disclaimer
 
-This application is built for educational and analytical purposes only.  
+This project is created for **educational and analytical purposes only**.  
 Stock market predictions are not guaranteed and should not be considered financial advice.
 
 ---
@@ -132,8 +168,10 @@ Stock market predictions are not guaranteed and should not be considered financi
 B.E. Computer Engineering  
 Vidyavardhini College of Engineering  
 
+📧 shahiduddin153@gmail.com  
+
 ---
 
 ## ⭐ Support
 
-If you like this project, consider giving it a ⭐ on GitHub!
+If you found this project helpful, consider giving it a ⭐ on GitHub!
