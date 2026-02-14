@@ -40,15 +40,14 @@ The model predicts future closing prices for selected stocks.
 ### 🤖 AI Predictor
 ![AI Predictor Screenshot](snapshots/2.png)
 
-### 🤖 Top 50 Stocks
+### 📊 Top 50 Stocks
 ![Top 50 Stocks Screenshot](snapshots/3.png)
 
-### 🤖Why InvestIQ?
-![Why InvestIQ? Screenshot](snapshots/4.png)
+### 💡 Why InvestIQ?
+![Why InvestIQ Screenshot](snapshots/4.png)
 
-### 🤖About Us
-![About UsScreenshot](snapshots/5.png)
-
+### 👤 About Us
+![About Us Screenshot](snapshots/5.png)
 ---
 
 ## 🛠️ Tech Stack
