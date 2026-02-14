@@ -168,8 +168,6 @@ Stock market predictions are not guaranteed and should not be considered financi
 B.E. Computer Engineering  
 Vidyavardhini College of Engineering  
 
-📧 shahiduddin153@gmail.com  
-
 ---
 
 ## ⭐ Support
