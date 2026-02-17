@@ -1,5 +1,5 @@
 # 📈 InvestIQ  
-### 🚀 AI-Powered Stock Market Analytics & Forecasting Platform
+###  AI-Powered Stock Market Analytics & Forecasting Platform
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![Dash](https://img.shields.io/badge/Dash-Framework-black)
