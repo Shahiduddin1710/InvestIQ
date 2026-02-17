@@ -73,8 +73,6 @@ The model predicts future closing prices for selected stocks based on historical
   <img src="snapshots/5.png" width="900">
 </p>
 
-> Place your images inside: `snapshots/` folder in the root directory.
-
 ---
 
 ## 🛠️ Tech Stack
