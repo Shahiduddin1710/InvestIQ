@@ -119,7 +119,7 @@ Whether you're exploring historical price trends or projecting future movements,
 
 Developed with by **Shahiduddin**
 
-*If you found this project useful, consider giving it a ⭐ — it means a lot!*
+*If you found this project useful, consider giving it a ⭐ it means a lot!*
 
 </div>
 
