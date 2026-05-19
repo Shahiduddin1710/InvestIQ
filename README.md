@@ -17,8 +17,6 @@
 
 *Intelligent market analysis · Interactive charting · ML-based forecasting*
 
-[Features](#-features) · [Tech Stack](#-tech-stack) · [Screenshots](#-screenshots) · [Installation](#-installation) · [Usage](#-usage) · [Disclaimer](#-disclaimer)
-
 </div>
 
 ---
