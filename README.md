@@ -26,8 +26,6 @@
 
 Whether you're exploring historical price trends or projecting future movements, InvestIQ delivers actionable insights through a smooth, responsive experience.
 
-> **Focus areas:** Clean financial insights · Interactive analytics · AI-assisted forecasting · Modern visualization
-
 ---
 
 ## ✨ Features
