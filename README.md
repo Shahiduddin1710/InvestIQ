@@ -22,7 +22,7 @@
 
 ## 📌 Overview
 
-**InvestIQ** is a modern, full-stack AI-powered stock market analytics platform that combines real-time financial data, interactive charting, technical indicators, and machine learning-based forecasting — all within a clean and professional UI.
+**InvestIQ** is a modern, full-stack AI-powered stock market analytics platform that combines real-time financial data, interactive charting, technical indicators, and machine learning-based forecasting all within a clean and professional UI.
 
 Whether you're exploring historical price trends or projecting future movements, InvestIQ delivers actionable insights through a smooth, responsive experience.
 
