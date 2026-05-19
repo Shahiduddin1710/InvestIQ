@@ -87,17 +87,17 @@ Whether you're exploring historical price trends or projecting future movements,
 
 ### 📊 Top 50 Stocks
 <p align="center">
-  <img src="snapshots/3.png" width="900" alt="Top 50 Stocks"/>
+  <img src="snapshots/3.jpg" width="900" alt="Top 50 Stocks"/>
 </p>
 
 ### 💡 Why InvestIQ?
 <p align="center">
-  <img src="snapshots/4.png" width="900" alt="Why InvestIQ"/>
+  <img src="snapshots/4.jpg" width="900" alt="Why InvestIQ"/>
 </p>
 
 ### 👤 About Page
 <p align="center">
-  <img src="snapshots/5.png" width="900" alt="About Page"/>
+  <img src="snapshots/5.jpg" width="900" alt="About Page"/>
 </p>
 
 
@@ -118,8 +118,6 @@ Whether you're exploring historical price trends or projecting future movements,
 <div align="center">
 
 Developed with by **Shahiduddin**
-
-[![GitHub](https://img.shields.io/badge/GitHub-@shahiduddin-181717?style=for-the-badge&logo=github)](https://github.com/yourusername)
 
 *If you found this project useful, consider giving it a ⭐ — it means a lot!*
 
