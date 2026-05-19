@@ -87,17 +87,17 @@ Whether you're exploring historical price trends or projecting future movements,
 
 ### 📊 Top 50 Stocks
 <p align="center">
-  <img src="snapshots/3.jpg" width="900" alt="Top 50 Stocks"/>
+  <img src="snapshots/3.jpeg" width="900" alt="Top 50 Stocks"/>
 </p>
 
 ### 💡 Why InvestIQ?
 <p align="center">
-  <img src="snapshots/4.jpg" width="900" alt="Why InvestIQ"/>
+  <img src="snapshots/4.jpeg" width="900" alt="Why InvestIQ"/>
 </p>
 
 ### 👤 About Page
 <p align="center">
-  <img src="snapshots/5.jpg" width="900" alt="About Page"/>
+  <img src="snapshots/5.jpeg" width="900" alt="About Page"/>
 </p>
 
 
