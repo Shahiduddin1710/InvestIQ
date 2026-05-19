@@ -11,7 +11,6 @@
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-Styling-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Python](https://img.shields.io/badge/Python-ML_Engine-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
 [![Plotly](https://img.shields.io/badge/Plotly-Visualization-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
 
 <br/>
 
