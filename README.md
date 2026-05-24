@@ -23,14 +23,13 @@ InvestIQ is a full-stack stock market analytics platform that allows users to an
 
 ## ✨ Features
 
-- 📈 **Candlestick Charts** — View opening and closing prices over any date range
-- 📉 **Technical Indicators** — EMA 20 and EMA 50 overlaid on price charts
-- 🤖 **AI Forecast** — SVR-based ML model predicting N days into the future with MAPE score
-- 🔍 **Stock Info** — Company name and full business description fetched live
-- 🌓 **Dark / Light Theme** — Full theme support with CSS variables, charts re-fetch on toggle
-- 📋 **Top 50 Stocks** — Quick reference list of major tickers
-- 📬 **Contact Form** — Sends email via Gmail SMTP with validation
-- ⚡ **Smooth Animations** — Framer Motion page transitions and stagger effects
+- **Candlestick Charts** — View opening and closing prices over any date range
+- **Technical Indicators** — EMA 20 and EMA 50 overlaid on price charts
+- **AI Forecast** — SVR-based ML model predicting N days into the future with MAPE score
+- **Stock Info** — Company name and full business description fetched live
+- **Dark / Light Theme** — Full theme support with CSS variables, charts re-fetch on toggle
+- **Top 50 Stocks** — Quick reference list of major tickers
+- **Contact Form** — Sends email via Gmail SMTP with validation
 
 ---
 
@@ -62,27 +61,27 @@ InvestIQ is a full-stack stock market analytics platform that allows users to an
 
 ## 🖼 Screenshots
 
-### 🏠 Home Page
+### Home Page
 <p align="center">
   <img src="snapshots/1.png" width="900" alt="Home Page"/>
 </p>
 
-### 🤖 AI Predictor
+### AI Predictor
 <p align="center">
   <img src="snapshots/2.png" width="900" alt="AI Predictor"/>
 </p>
 
-### 📊 Top 50 Stocks
+### Top 50 Stocks
 <p align="center">
   <img src="snapshots/3.jpeg" width="900" alt="Top 50 Stocks"/>
 </p>
 
-### 💡 Why InvestIQ?
+### Why InvestIQ?
 <p align="center">
   <img src="snapshots/4.jpeg" width="900" alt="Why InvestIQ"/>
 </p>
 
-### 👤 About Page
+### About Page
 <p align="center">
   <img src="snapshots/5.jpeg" width="900" alt="About Page"/>
 </p>
