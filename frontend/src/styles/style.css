@@ -1,38 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* ── Theme variables ─────────────────────────────────── */
-.dark {
-  --bg: #000000;
-  --bg-soft: #111111;
-  --card: #1a1a1a;
-  --text: #ffffff;
-  --border: #333333;
-  --accent: #c3ff00;
-}
-
-.light {
-  --bg: #f7f9fc;
-  --bg-soft: #ffffff;
-  --card: #ffffff;
-  --text: #1f2937;
-  --border: #e5e7eb;
-  --accent: #198754;
-}
-
-/* ── Base ─────────────────────────────────────────────── */
-html, body {
+html {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  overscroll-behavior: none;
-  -webkit-overflow-scrolling: touch;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100%;
 }
 
+
 body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+  min-height: 100%;
   background-color: var(--bg);
   color: var(--text);
   font-family: Arial, sans-serif;
@@ -46,13 +28,13 @@ body {
   background-color: var(--bg);
   color: var(--text);
   animation: rootFadeIn 0.35s ease forwards;
+  overflow: visible;
 }
 
 @keyframes rootFadeIn {
   to { opacity: 1; }
 }
 
-/* ── Page enter animation ─────────────────────────────── */
 .page-enter {
   opacity: 0;
   transform: translateY(12px);
@@ -64,7 +46,6 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ── Scrollbar ────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, var(--accent), var(--border));
@@ -72,7 +53,6 @@ body {
 }
 ::-webkit-scrollbar-track { background: var(--bg); }
 
-/* ── Navbar ───────────────────────────────────────────── */
 .navbar {
   background-color: var(--card);
   border-bottom: 1px solid var(--border);
@@ -81,6 +61,11 @@ body {
   z-index: 1000;
   backdrop-filter: blur(10px);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  min-height: 64px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .dark .navbar { background-color: rgba(26, 26, 26, 0.8) !important; }
@@ -111,7 +96,6 @@ body {
 .nav-link:hover::after { width: 100%; }
 .nav-link.active { color: var(--accent) !important; }
 
-/* ── Buttons ──────────────────────────────────────────── */
 button, .btn {
   background-color: var(--bg-soft);
   color: var(--text);
@@ -124,7 +108,6 @@ button, .btn {
 button:hover { box-shadow: 0 0 10px rgba(0,0,0,0.25); transform: translateY(-1px); }
 button:active { transform: scale(0.97); }
 
-/* ── Inputs ───────────────────────────────────────────── */
 input, textarea {
   background-color: var(--bg-soft);
   color: var(--text);
@@ -136,7 +119,6 @@ input, textarea {
 
 input::placeholder, textarea::placeholder { color: #888; }
 
-/* ── Feature / Member boxes ───────────────────────────── */
 .feature-box, .member-box, .stock-list-item {
   background-color: var(--card);
   color: var(--text);
@@ -165,7 +147,6 @@ input::placeholder, textarea::placeholder { color: #888; }
   box-shadow: 0 8px 20px rgba(0,0,0,0.06);
 }
 
-/* ── Home ─────────────────────────────────────────────── */
 .home-container {
   background-color: var(--bg);
   color: var(--text);
@@ -207,7 +188,6 @@ input::placeholder, textarea::placeholder { color: #888; }
 
 .light .home-container > * { position: relative; z-index: 1; }
 
-/* ── Headings ─────────────────────────────────────────── */
 h1, h2, h3, h4, h5 { color: var(--accent); }
 
 .light h1 { color: #14532d; }
@@ -216,7 +196,6 @@ h1, h2, h3, h4, h5 { color: var(--accent); }
 p, li, span { color: var(--text); }
 .light p { color: #374151; line-height: 1.7; }
 
-/* ── Why InvestIQ ─────────────────────────────────────── */
 .why-investiq-container {
   width: 100%;
   padding: 60px 20px;
@@ -258,7 +237,6 @@ p, li, span { color: var(--text); }
   border-radius: 12px;
 }
 
-/* ── AI Predictor ─────────────────────────────────────── */
 .ai-predictor {
   background-color: var(--bg);
   min-height: 100vh;
@@ -267,14 +245,16 @@ p, li, span { color: var(--text); }
 }
 
 .ai-predictor input {
-  height: 40px;
-  padding: 10px 15px;
-  font-weight: 500;
-  border-radius: 12px;
+  height: 36px;
+  padding: 6px 12px;
+  font-weight: 400;
+  border-radius: 8px;
   width: 100%;
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   transition: all 0.3s ease;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
 .dark .ai-predictor input { background: #1a1a1a; border: 1px solid #333; color: #fff; }
@@ -284,15 +264,15 @@ p, li, span { color: var(--text); }
 
 .ai-predictor button {
   width: 100%;
-  height: 44px;
-  padding: 8px 12px;
-  font-size: 14px;
-  border-radius: 10px;
+  height: 36px;
+  padding: 4px 12px;
+  font-size: 13px;
+  border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--bg-soft);
   color: var(--text);
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -339,7 +319,6 @@ p, li, span { color: var(--text); }
 
 .ai-predictor h3 { color: var(--accent); }
 
-/* ── About ────────────────────────────────────────────── */
 .about-bg-container {
   max-width: 1200px;
   margin: 40px auto;
@@ -384,7 +363,6 @@ p, li, span { color: var(--text); }
   color: var(--text);
 }
 
-/* ── Contact ──────────────────────────────────────────── */
 .contact-input, .contact-textarea {
   width: 100%;
   padding: 12px 14px;
@@ -395,6 +373,7 @@ p, li, span { color: var(--text); }
   color: var(--text);
   display: block;
   margin-bottom: 12px;
+  box-sizing: border-box;
 }
 
 .contact-textarea { min-height: 120px; resize: none; }
@@ -424,7 +403,6 @@ p, li, span { color: var(--text); }
   box-shadow: 0 10px 22px rgba(0,0,0,0.2);
 }
 
-/* ── Stock list ───────────────────────────────────────── */
 .stock-list-item {
   display: flex;
   align-items: center;
@@ -438,7 +416,6 @@ p, li, span { color: var(--text); }
 .stock-list-item b { font-weight: 600; color: var(--accent); }
 .stock-list-item span { color: var(--text); opacity: 0.85; }
 
-/* ── Plotly charts ────────────────────────────────────── */
 .js-plotly-plot {
   margin-bottom: 20px;
   transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -461,8 +438,6 @@ p, li, span { color: var(--text); }
 }
 .js-plotly-plot:hover { transform: scale(1.01); }
 
-
-/* ── Skeleton loader ──────────────────────────────────── */
 @keyframes shimmer {
   0% { background-position: -468px 0; }
   100% { background-position: 468px 0; }
@@ -475,7 +450,6 @@ p, li, span { color: var(--text); }
   animation: shimmer 1.4s ease-in-out infinite;
 }
 
-/* ── Theme toggle button ──────────────────────────────── */
 .theme-toggle-btn {
   display: flex;
   align-items: center;

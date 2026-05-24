@@ -49,6 +49,8 @@ const stocks = [
   ['UBER', ' - Uber Technologies Inc'],
   ['PYPL', ' - PayPal Holdings Inc'],
   ['SNOW', ' - Snowflake Inc'],
+  ['BAC', ' - Bank of America Corporation'],
+  ['SHOP', ' - Shopify Inc'],
 ]
 
 const container = { hidden: {}, show: { transition: { staggerChildren: 0.03 } } }

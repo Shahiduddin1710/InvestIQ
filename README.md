@@ -1,51 +1,38 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/InvestIQ-AI%20Stock%20Analytics-0ea5e9?style=for-the-badge&logo=chartdotjs&logoColor=white" alt="InvestIQ" height="40"/>
+<img src="frontend/public/assets/name.png" alt="InvestIQ Logo" height="60"/>
 
 # InvestIQ
 
-### AI-Powered Stock Market Analytics & Forecasting Platform
+**A modern stock market analytics and AI prediction web application.**
 
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-Styling-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Python](https://img.shields.io/badge/Python-ML_Engine-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org/)
-[![Plotly](https://img.shields.io/badge/Plotly-Visualization-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/)
-
-<br/>
-
-*Intelligent market analysis · Interactive charting · ML-based forecasting*
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
 </div>
 
 ---
 
-## 📌 Overview
+## 📌 What is InvestIQ?
 
-**InvestIQ** is a modern, full-stack AI-powered stock market analytics platform that combines real-time financial data, interactive charting, technical indicators, and machine learning-based forecasting all within a clean and professional UI.
-
-Whether you're exploring historical price trends or projecting future movements, InvestIQ delivers actionable insights through a smooth, responsive experience.
+InvestIQ is a full-stack stock market analytics platform that allows users to analyze stocks, view candlestick charts, technical indicators, and predict future stock prices using Machine Learning (SVR model). It features a clean dark/light theme, smooth animations, and a responsive layout built for both desktop and mobile.
 
 ---
 
 ## ✨ Features
 
-### 📈 Real-Time Stock Analytics
-- Live stock data retrieval via `yfinance`
-- Historical price visualization with smooth transitions
-- Interactive candlestick chart rendering
-- EMA (Exponential Moving Average) overlays
-
-### 🤖 AI-Based Forecasting
-- Machine learning prediction engine (scikit-learn)
-- Recursive multi-day forecasting with model caching
-- Historical trend learning & visualization
-- Animated loading states with error handling
-
-### 🎨 Modern UI/UX
-- Dark / Light theme toggle
-- Premium interaction experience with Framer Motion animations
-- Theme-aware graph rendering via Plotly.js
+- 📈 **Candlestick Charts** — View opening and closing prices over any date range
+- 📉 **Technical Indicators** — EMA 20 and EMA 50 overlaid on price charts
+- 🤖 **AI Forecast** — SVR-based ML model predicting N days into the future with MAPE score
+- 🔍 **Stock Info** — Company name and full business description fetched live
+- 🌓 **Dark / Light Theme** — Full theme support with CSS variables, charts re-fetch on toggle
+- 📋 **Top 50 Stocks** — Quick reference list of major tickers
+- 📬 **Contact Form** — Sends email via Gmail SMTP with validation
+- ⚡ **Smooth Animations** — Framer Motion page transitions and stagger effects
 
 ---
 
@@ -54,24 +41,26 @@ Whether you're exploring historical price trends or projecting future movements,
 ### Frontend
 | Technology | Purpose |
 |---|---|
-| React 19 + Vite | UI framework & build tool |
-| Tailwind CSS | Utility-first styling |
+| React (Vite) | UI framework |
 | React Router DOM | Client-side routing |
-| Framer Motion | Animations & transitions |
-| Plotly.js | Interactive financial charts |
-| Axios | HTTP client |
-| Lucide React | Icon library |
+| Framer Motion | Animations and transitions |
+| Plotly.js | Interactive stock charts |
+| Lucide React | Icons |
+| CSS Variables | Dark/light theming |
 
 ### Backend
 | Technology | Purpose |
 |---|---|
-| FastAPI | High-performance REST API |
-| yfinance | Stock data retrieval |
-| pandas & numpy | Data processing |
-| scikit-learn | ML forecasting engine |
-| Python (Uvicorn) | ASGI server |
+| Python + Flask | REST API server |
+| Flask-CORS | Cross-origin requests |
+| yFinance | Live stock data |
+| Pandas + NumPy | Data processing |
+| Scikit-learn (SVR) | ML forecast model |
+| Plotly | Server-side chart generation |
+| SMTP (Gmail) | Contact form emails |
 
 ---
+
 
 ## 🖼 Screenshots
 
@@ -122,4 +111,3 @@ Developed with by **Shahiduddin**
 *If you found this project useful, consider giving it a ⭐ it means a lot!*
 
 </div>
-

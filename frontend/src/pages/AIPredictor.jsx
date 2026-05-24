@@ -43,21 +43,27 @@ const fmt = (d) => d ? d.toISOString().split('T')[0] : null
         try {
           const data = await fetchStockPrice(ticker.toUpperCase(), fmt(startDate), fmt(endDate), theme)
           setStockFig(data.figure)
-        } catch {}
+        } catch {
+          //s
+        }
       }
 
       if (indicatorFig && ticker && startDate) {
         try {
           const data = await fetchStockIndicators(ticker.toUpperCase(), fmt(startDate), fmt(endDate), theme)
           setIndicatorFig(data.figure)
-        } catch {}
+        } catch {
+          //ss
+        }
       }
 
       if (forecastFig && ticker && nDays) {
         try {
           const data = await fetchForecast(ticker.toUpperCase(), parseInt(nDays), theme)
           setForecastFig(data.figure)
-        } catch {}
+        } catch {
+          //ss
+        }
       }
     }
 
@@ -140,10 +146,10 @@ const handleForecast = useCallback(async () => {
 
   return (
     <div className="ai-predictor page-enter">
-      <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap' }}>
+     <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
 
-        {/* ── Sidebar ── */}
-        <div style={{ width: '280px', flexShrink: 0 }}>
+       {/* ── Sidebar ── */}
+        <div style={{ width: '280px', flexShrink: 0, overflow: 'hidden', position: 'relative', zIndex: 1 }}>
      <input
             placeholder="Ex: AAPL"
             value={ticker}
@@ -175,34 +181,22 @@ const handleForecast = useCallback(async () => {
             {loadingSubmit ? 'Loading...' : 'Submit'}
           </button>
     
-          {/* Date pickers */}
-<div style={{ position: 'relative', marginBottom: '12px' }}>
-            {!startDate && <span style={{
-              position: 'absolute', left: '15px', top: '50%', transform: 'translateY(-50%)',
-              color: '#888', fontSize: '15px', pointerEvents: 'none', zIndex: 1
-            }}>Start Date</span>}
-            <input
-              type="date"
-              value={startDate ? startDate.toISOString().split('T')[0] : ''}
-              onChange={e => setStartDate(e.target.value ? new Date(e.target.value) : null)}
-              max={new Date().toISOString().split('T')[0]}
-              min="1995-08-05"
-              style={{ color: startDate ? 'var(--text)' : 'transparent' }}
-            />
-          </div>
-          <div style={{ position: 'relative', marginBottom: '12px' }}>
-            {!endDate && <span style={{
-              position: 'absolute', left: '15px', top: '50%', transform: 'translateY(-50%)',
-              color: '#888', fontSize: '15px', pointerEvents: 'none', zIndex: 1
-            }}>End Date</span>}
-            <input
-              type="date"
-              value={endDate ? endDate.toISOString().split('T')[0] : ''}
-              onChange={e => setEndDate(e.target.value ? new Date(e.target.value) : null)}
-              max={new Date().toISOString().split('T')[0]}
-              style={{ color: endDate ? 'var(--text)' : 'transparent' }}
-            />
-          </div>
+         {/* Date pickers */}
+        <input
+            type="date"
+            value={startDate ? startDate.toISOString().split('T')[0] : ''}
+            onChange={e => setStartDate(e.target.value ? new Date(e.target.value) : null)}
+            max={new Date().toISOString().split('T')[0]}
+            min="1995-08-05"
+            style={{ display: 'block', width: '100%', marginBottom: '12px', boxSizing: 'border-box' }}
+          />
+          <input
+            type="date"
+            value={endDate ? endDate.toISOString().split('T')[0] : ''}
+            onChange={e => setEndDate(e.target.value ? new Date(e.target.value) : null)}
+            max={new Date().toISOString().split('T')[0]}
+            style={{ display: 'block', width: '100%', marginBottom: '12px', boxSizing: 'border-box' }}
+          />
 
           {/* Stock + Indicators row */}
           <div style={{ display: 'flex', gap: '4%', marginBottom: '12px' }}>
@@ -258,8 +252,8 @@ const handleForecast = useCallback(async () => {
           </AnimatePresence>
         </div>
 
-        {/* ── Main content ── */}
-        <div style={{ flex: 1, minWidth: 0 }}>
+       {/* ── Main content ── */}
+        <div style={{ flex: 1, minWidth: 0, overflow: 'hidden' }}>
         {loadingSubmit ? (
             <>
               <LoadingSkeleton height={120} />
