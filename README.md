@@ -73,7 +73,7 @@ InvestIQ is a full-stack stock market analytics platform that allows users to an
 
 ### Top 50 Stocks
 <p align="center">
-  <img src="snapshots/3.jpeg" width="900" alt="Top 50 Stocks"/>
+  <img src="snapshots/3.png" width="900" alt="Top 50 Stocks"/>
 </p>
 
 ### Why InvestIQ?

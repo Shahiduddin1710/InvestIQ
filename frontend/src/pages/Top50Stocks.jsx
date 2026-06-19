@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion'
+import { Search } from 'lucide-react'
+import { useState } from 'react'
 
 const stocks = [
   ['AAPL', ' - Apple Inc'],
@@ -57,6 +59,11 @@ const container = { hidden: {}, show: { transition: { staggerChildren: 0.03 } } 
 const item = { hidden: { opacity: 0, x: -16 }, show: { opacity: 1, x: 0, transition: { duration: 0.3 } } }
 
 export default function Top50Stocks() {
+  const [query, setQuery] = useState('')
+  const filtered = stocks.filter(([code, name]) =>
+    (code + name).toLowerCase().includes(query.toLowerCase())
+  )
+
   return (
     <div className="page-enter" style={{
       backgroundColor: 'var(--bg)',
@@ -66,16 +73,40 @@ export default function Top50Stocks() {
   <h1 style={{ fontSize: '38px', textAlign: 'left', color: 'var(--accent)' }}>
         Top 50 Stocks
       </h1>
-      <p style={{ textAlign: 'left', fontSize: '14px', marginBottom: '30px' }}>
-        (Stock Code - Stock Name) ____ Hint: You can use Ctrl+F to search in the Top 50 Stock List.
-      </p>
+   <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '10px',
+        marginBottom: '30px',
+        background: 'var(--bg-soft)',
+        border: '1px solid var(--border)',
+        borderRadius: '10px',
+        padding: '8px 14px',
+        maxWidth: '400px'
+      }}>
+        <Search size={16} color="var(--accent)" />
+        <input
+          type="text"
+          placeholder="Search by ticker or name..."
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+          style={{
+            background: 'transparent',
+            border: 'none',
+            outline: 'none',
+            color: 'var(--text)',
+            fontSize: '14px',
+            width: '100%'
+          }}
+        />
+      </div>
    <motion.ul
         variants={container}
         initial="hidden"
         animate="show"
         style={{ padding: 0, maxWidth: '100%', margin: '0' }}
       >
-        {stocks.map(([code, name]) => (
+      {filtered.map(([code, name]) => (
          <motion.li
             key={code}
             variants={item}
