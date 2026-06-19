@@ -23,12 +23,12 @@ InvestIQ is a full-stack stock market analytics platform that allows users to an
 
 ## ✨ Features
 
-- **Candlestick Charts** :View opening and closing prices over any date range
+- **Candlestick Charts**: View opening and closing prices over any date range
 - **Technical Indicators**: EMA 20 and EMA 50 overlaid on price charts
-- **AI Forecast**:SVR-based ML model predicting N days into the future with MAPE score
+- **AI Forecast**: SVR-based ML model predicting N days into the future with MAPE score
 - **Stock Info**: Company name and full business description fetched live
 - **Dark / Light Theme**: Full theme support with CSS variables, charts re-fetch on toggle
-- **Top 50 Stocks**:Quick reference list of major tickers
+- **Top 50 Stocks**: Quick reference list of major tickers
 - **Contact Form**: Sends email via Gmail SMTP with validation
 
 ---
