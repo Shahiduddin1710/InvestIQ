@@ -19,6 +19,8 @@
 
 InvestIQ is a full-stack stock market analytics platform that allows users to analyze stocks, view candlestick charts, technical indicators, and predict future stock prices using Machine Learning (SVR model). It features a clean dark/light theme, smooth animations, and a responsive layout built for both desktop and mobile.
 
+🔗 **Live Demo:** [invest-iq-eight.vercel.app](https://invest-iq-eight.vercel.app)
+
 ---
 
 ## ✨ Features
