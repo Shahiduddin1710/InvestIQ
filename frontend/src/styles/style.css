@@ -17,7 +17,7 @@ body {
   min-height: 100%;
   background-color: var(--bg);
   color: var(--text);
-  font-family: Arial, sans-serif;
+ font-family: 'Inter', sans-serif;
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
@@ -188,7 +188,11 @@ input::placeholder, textarea::placeholder { color: #888; }
 
 .light .home-container > * { position: relative; z-index: 1; }
 
-h1, h2, h3, h4, h5 { color: var(--accent); }
+h1, h2, h3, h4, h5 {
+  color: var(--accent);
+  font-family: 'Sora', sans-serif;
+  letter-spacing: -0.02em;
+}
 
 .light h1 { color: #14532d; }
 .light h2, .light h3 { color: #166534; }
@@ -205,6 +209,22 @@ p, li, span { color: var(--text); }
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@media (max-width: 480px) {
+  .why-investiq-container {
+    padding: 36px 0px;
+  }
+
+  .why-investiq-container h1 {
+    font-size: 26px !important;
+  }
+
+  .why-investiq-container h6 {
+    font-size: 14px !important;
+  }
 }
 
 .why-investiq-container::before {
@@ -244,6 +264,25 @@ p, li, span { color: var(--text); }
   color: var(--text);
 }
 
+@media (max-width: 600px) {
+  .ai-predictor {
+    padding: 16px 12px;
+  }
+
+  .ai-predictor > div {
+    flex-direction: column !important;
+  }
+
+  .ai-predictor > div > div:first-child {
+    width: 100% !important;
+  }
+
+  .ai-predictor .btn-stock,
+  .ai-predictor .btn-indicators {
+    width: 48% !important;
+    display: inline-block !important;
+  }
+}
 .ai-predictor input {
   height: 36px;
   padding: 6px 12px;
@@ -465,6 +504,96 @@ p, li, span { color: var(--text); }
   transition: all 0.25s ease;
 }
 
+.nav-links-wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .nav-hamburger { display: flex !important; }
+
+.nav-links-wrap {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 12px 0 8px;
+    gap: 4px;
+    background-color: var(--card);
+    border-top: 1px solid var(--border);
+    margin-top: 8px;
+  }
+
+ .nav-links-wrap.open { display: flex; }
+  .nav-links-wrap img { display: none; }
+
+  .nav-links-wrap .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links-wrap .theme-toggle-btn {
+    margin: 4px auto 0 auto !important;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 10px 12px;
+  }
+
+  .theme-toggle-btn {
+    margin-left: 12px !important;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 28px !important; }
+  h2 { font-size: 22px !important; }
+
+  .home-container { padding: 0 0 40px; }
+  .how-to-use-container { padding: 0 16px !important; }
+
+  .feature-box {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .about-bg-container {
+    margin: 16px;
+    padding: 20px 16px;
+  }
+
+  .about-card { padding: 18px 14px; }
+  .about-card h2 { font-size: 20px; }
+  .about-card p { font-size: 14px; }
+
+  .why-investiq-container { padding: 40px 14px; }
+
+  .ai-predictor { padding: 20px 14px; }
+  .ai-predictor .btn-stock,
+  .ai-predictor .btn-indicators {
+    width: 100%;
+    display: block;
+    margin-right: 0;
+  }
+
+  .stock-list-item { font-size: 14px; padding: 10px 12px; }
+
+  .contact-button { width: 100%; }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 { font-size: 36px !important; }
+  .feature-box { width: clamp(160px, 42vw, 200px) !important; }
+  .how-to-use-container { padding: 0 20px !important; }
+  .about-bg-container { margin: 20px 16px; padding: 28px 20px; }
+  .why-investiq-container { padding: 50px 20px; }
+}
+
 .theme-toggle-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
@@ -489,9 +618,34 @@ p, li, span { color: var(--text); }
   margin-bottom: 0;
 }
 
+input[type="date"] {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+.light input[type="date"] {
+  color: #6b7280;
+}
+
+.light input[type="date"]:valid {
+  color: #1f2937;
+}
+
+.dark input[type="date"] {
+  color: #6b7280;
+}
+
+.dark input[type="date"]:valid {
+  color: #ffffff;
+}
+
 input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(0);
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .dark input[type="date"]::-webkit-calendar-picker-indicator {

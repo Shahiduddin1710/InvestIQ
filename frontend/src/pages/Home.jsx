@@ -42,7 +42,7 @@ const item = { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0, transiti
 export default function Home() {
   return (
     <div className="home-container page-enter" style={{ padding: '0 0 60px' }}>
-      <h1 style={{ fontSize: '50px', textAlign: 'center', marginTop: '30px', marginBottom: '0' }}>
+     <h1 style={{ textAlign: 'center', marginTop: '30px', marginBottom: '0' }}>
         Welcome to InvestIQ
       </h1>
 
@@ -50,13 +50,13 @@ export default function Home() {
         <h2 style={{ color: '#0eabd6', fontSize: '35px', textAlign: 'center', marginTop: '50px' }}>
           Features
         </h2>
-        <motion.div
+       <motion.div
           variants={container}
           initial="hidden"
           animate="show"
           style={{
             display: 'flex',
-            justifyContent: 'space-around',
+            justifyContent: 'center',
             marginTop: '30px',
             flexWrap: 'wrap',
             gap: '16px'
@@ -67,7 +67,7 @@ export default function Home() {
               key={f.title}
               variants={item}
               className="feature-box"
-              style={{ width: '220px', padding: '20px', textAlign: 'center' }}
+              style={{ width: 'clamp(140px, 42vw, 220px)', padding: '16px', textAlign: 'center' }}
             >
        <div style={{
                width: '140px',

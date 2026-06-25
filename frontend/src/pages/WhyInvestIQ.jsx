@@ -17,23 +17,22 @@ export default function WhyInvestIQ() {
       className="why-investiq-container page-enter"
       style={{ minHeight: '100vh' }}
     >
-      <h1 style={{
+    <h1 style={{
         textAlign: 'center',
-        fontSize: '38px',
         marginBottom: '25px',
         color: 'var(--accent)'
       }}>
         Why InvestIQ?
       </h1>
-      <h6 style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 30px', fontSize: '16px' }}>
+     <h6 style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 30px', fontSize: '16px', padding: '0 12px' }}>
         InvestIQ is a cutting-edge investment platform designed to empower investors with powerful tools
         and insights to make informed investment decisions. Here are some reasons why you should choose InvestIQ:
       </h6>
-      <motion.ul
+    <motion.ul
         variants={container}
         initial="hidden"
         animate="show"
-        style={{ listStyle: 'none', padding: '0', maxWidth: '900px', margin: '0 auto' }}
+        style={{ listStyle: 'none', padding: '0 12px', maxWidth: '900px', margin: '0 auto', boxSizing: 'border-box' }}
       >
         {reasons.map((r, i) => (
           <motion.li
@@ -41,14 +40,16 @@ export default function WhyInvestIQ() {
             variants={item}
             className="why-investiq-list-item"
             style={{
-              marginBottom: '18px',
-              padding: '18px 20px',
+              marginBottom: '14px',
+              padding: '14px 16px',
               backgroundColor: 'var(--card)',
               border: '1px solid var(--border)',
               borderRadius: '12px',
-              fontSize: '16px',
+              fontSize: 'clamp(13px, 3.5vw, 16px)',
+              lineHeight: '1.6',
               transition: 'transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease',
-              cursor: 'pointer'
+              cursor: 'pointer',
+              wordBreak: 'break-word'
             }}
             whileHover={{ scale: 1.01, y: -3 }}
           >

@@ -146,10 +146,10 @@ const handleForecast = useCallback(async () => {
 
   return (
     <div className="ai-predictor page-enter">
-     <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
+    <div style={{ display: 'flex', gap: '24px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
 
        {/* ── Sidebar ── */}
-        <div style={{ width: '280px', flexShrink: 0, overflow: 'hidden', position: 'relative', zIndex: 1 }}>
+        <div style={{ width: 'min(280px, 100%)', flexShrink: 0, overflow: 'hidden', position: 'relative', zIndex: 1 }}>
      <input
             placeholder="Ex: AAPL"
             value={ticker}
@@ -182,21 +182,27 @@ const handleForecast = useCallback(async () => {
           </button>
     
          {/* Date pickers */}
-        <input
-            type="date"
-            value={startDate ? startDate.toISOString().split('T')[0] : ''}
-            onChange={e => setStartDate(e.target.value ? new Date(e.target.value) : null)}
-            max={new Date().toISOString().split('T')[0]}
-            min="1995-08-05"
-            style={{ display: 'block', width: '100%', marginBottom: '12px', boxSizing: 'border-box' }}
-          />
-          <input
-            type="date"
-            value={endDate ? endDate.toISOString().split('T')[0] : ''}
-            onChange={e => setEndDate(e.target.value ? new Date(e.target.value) : null)}
-            max={new Date().toISOString().split('T')[0]}
-            style={{ display: 'block', width: '100%', marginBottom: '12px', boxSizing: 'border-box' }}
-          />
+       <div style={{ position: 'relative', marginBottom: '12px' }}>
+            <label style={{ fontSize: '11px', color: '#888', marginBottom: '4px', display: 'block' }}>Start Date</label>
+            <input
+              type="date"
+              value={startDate ? startDate.toISOString().split('T')[0] : ''}
+              onChange={e => setStartDate(e.target.value ? new Date(e.target.value) : null)}
+              max={new Date().toISOString().split('T')[0]}
+              min="1995-08-05"
+              style={{ display: 'block', width: '100%', boxSizing: 'border-box', fontSize: '14px' }}
+            />
+          </div>
+          <div style={{ position: 'relative', marginBottom: '12px' }}>
+            <label style={{ fontSize: '11px', color: '#888', marginBottom: '4px', display: 'block' }}>End Date</label>
+            <input
+              type="date"
+              value={endDate ? endDate.toISOString().split('T')[0] : ''}
+              onChange={e => setEndDate(e.target.value ? new Date(e.target.value) : null)}
+              max={new Date().toISOString().split('T')[0]}
+              style={{ display: 'block', width: '100%', boxSizing: 'border-box', fontSize: '14px' }}
+            />
+          </div>
 
           {/* Stock + Indicators row */}
           <div style={{ display: 'flex', gap: '4%', marginBottom: '12px' }}>
