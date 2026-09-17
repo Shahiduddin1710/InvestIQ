@@ -96,8 +96,7 @@ InvestIQ is a full-stack stock market analytics platform that allows users to an
 > InvestIQ is intended **for educational and analytical purposes only.**
 >
 > This platform does **not** provide financial advice, investment recommendations, or trading guarantees. Past performance is not indicative of future results.
->
-> **Always consult a certified financial advisor before making any investment decisions.**
+
 
 ---
 
